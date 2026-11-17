@@ -1,0 +1,15 @@
+[package]
+name = "multipart-commerce-rust"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+path = "src/lib.rs"
+
+[[bin]]
+name = "checkout_uploader"
+path = "src/main.rs"
+
+[dependencies]
+reqwest = { version = "0.12", features = ["blocking", "json"] }
+serde_json = "1"
